@@ -68,10 +68,34 @@ const Post = ({ post }: Props) => {
       </article>
       <hr className="max-w-lg my-5 border mx-auto border-yellow-500" />
 
-      <form>
-        <label>
-          <span>Name</span>
-          <input type="text" placeholder="Name" />
+      <form className="flex flex-col p-5 my-10 max-w-2xl mx-auto">
+        <h3 className="text-sm text-yellow-500">Enjoyed this article?</h3>
+        <h4 className="text-3xl font-bold">Leave a comment below</h4>
+        <hr className="py-3 mt-2" />
+
+        <label className="block mb-5">
+          <span className="text-gray-700 block mb-2">Name</span>
+          <input
+            className="shadow border rounded py-2 px-3 form-inut mt-1 w-full ring-yellow-500 focus:ring-1 outline-none"
+            type="text"
+            placeholder="Name"
+          />
+        </label>
+        <label className="block mb-5">
+          <span className="text-gray-700 block mb-2">Email</span>
+          <input
+            className="shadow border rounded py-2 px-3 form-inut mt-1 w-full ring-yellow-500 focus:ring-1 outline-none"
+            type="email"
+            placeholder="Email"
+          />
+        </label>
+        <label className="block mb-5">
+          <span className="text-gray-700 block mb-2">Comment</span>
+          <textarea
+            className="shadow border rounded py-2 px-3 form-inut mt-1 w-full ring-yellow-500 focus:ring-1 outline-none"
+            placeholder="Name"
+            rows={8}
+          ></textarea>
         </label>
       </form>
     </main>
